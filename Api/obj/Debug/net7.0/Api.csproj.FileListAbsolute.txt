@@ -1,8 +1,8 @@
 C:\Users\APT01-49\Desktop\PracticaReto\Api\bin\Debug\net7.0\appsettings.Development.json
 C:\Users\APT01-49\Desktop\PracticaReto\Api\bin\Debug\net7.0\appsettings.json
 C:\Users\APT01-49\Desktop\PracticaReto\Api\bin\Debug\net7.0\Api.exe
-C:\Users\APT01-49\Desktop\PracticaReto\Api\bin\Debug\net7.0\Api.deps.json
-C:\Users\APT01-49\Desktop\PracticaReto\Api\bin\Debug\net7.0\Api.runtimeconfig.json
+c:\Users\APT01-49\Desktop\PracticaReto\Api\bin\Debug\net7.0\Api.deps.json
+c:\Users\APT01-49\Desktop\PracticaReto\Api\bin\Debug\net7.0\Api.runtimeconfig.json
 C:\Users\APT01-49\Desktop\PracticaReto\Api\bin\Debug\net7.0\Api.dll
 C:\Users\APT01-49\Desktop\PracticaReto\Api\bin\Debug\net7.0\Api.pdb
 C:\Users\APT01-49\Desktop\PracticaReto\Api\bin\Debug\net7.0\AspNetCoreRateLimit.dll
@@ -51,9 +51,9 @@ C:\Users\APT01-49\Desktop\PracticaReto\Api\bin\Debug\net7.0\System.IdentityModel
 C:\Users\APT01-49\Desktop\PracticaReto\Api\bin\Debug\net7.0\Aplication.dll
 C:\Users\APT01-49\Desktop\PracticaReto\Api\bin\Debug\net7.0\Dominio.dll
 C:\Users\APT01-49\Desktop\PracticaReto\Api\bin\Debug\net7.0\Persistencia.dll
-C:\Users\APT01-49\Desktop\PracticaReto\Api\bin\Debug\net7.0\Aplication.pdb
 C:\Users\APT01-49\Desktop\PracticaReto\Api\bin\Debug\net7.0\Dominio.pdb
 C:\Users\APT01-49\Desktop\PracticaReto\Api\bin\Debug\net7.0\Persistencia.pdb
+C:\Users\APT01-49\Desktop\PracticaReto\Api\bin\Debug\net7.0\Aplication.pdb
 C:\Users\APT01-49\Desktop\PracticaReto\Api\obj\Debug\net7.0\Api.csproj.AssemblyReference.cache
 C:\Users\APT01-49\Desktop\PracticaReto\Api\obj\Debug\net7.0\Api.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\APT01-49\Desktop\PracticaReto\Api\obj\Debug\net7.0\Api.AssemblyInfoInputs.cache
@@ -69,9 +69,9 @@ C:\Users\APT01-49\Desktop\PracticaReto\Api\obj\Debug\net7.0\staticwebassets.pack
 C:\Users\APT01-49\Desktop\PracticaReto\Api\obj\Debug\net7.0\staticwebassets.build.json
 C:\Users\APT01-49\Desktop\PracticaReto\Api\obj\Debug\net7.0\staticwebassets.development.json
 C:\Users\APT01-49\Desktop\PracticaReto\Api\obj\Debug\net7.0\scopedcss\bundle\Api.styles.css
-C:\Users\APT01-49\Desktop\PracticaReto\Api\obj\Debug\net7.0\Api.csproj.CopyComplete
+c:\Users\APT01-49\Desktop\PracticaReto\Api\obj\Debug\net7.0\Api.csproj.CopyComplete
 C:\Users\APT01-49\Desktop\PracticaReto\Api\obj\Debug\net7.0\Api.dll
 C:\Users\APT01-49\Desktop\PracticaReto\Api\obj\Debug\net7.0\refint\Api.dll
 C:\Users\APT01-49\Desktop\PracticaReto\Api\obj\Debug\net7.0\Api.pdb
-C:\Users\APT01-49\Desktop\PracticaReto\Api\obj\Debug\net7.0\Api.genruntimeconfig.cache
-C:\Users\APT01-49\Desktop\PracticaReto\Api\obj\Debug\net7.0\ref\Api.dll
+c:\Users\APT01-49\Desktop\PracticaReto\Api\obj\Debug\net7.0\Api.genruntimeconfig.cache
+c:\Users\APT01-49\Desktop\PracticaReto\Api\obj\Debug\net7.0\ref\Api.dll
