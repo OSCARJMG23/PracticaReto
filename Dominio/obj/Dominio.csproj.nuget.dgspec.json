@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\APT01-49\\Desktop\\PracticaReto\\Dominio\\Dominio.csproj": {}
+    "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Dominio\\Dominio.csproj": {}
   },
   "projects": {
-    "C:\\Users\\APT01-49\\Desktop\\PracticaReto\\Dominio\\Dominio.csproj": {
+    "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Dominio\\Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\APT01-49\\Desktop\\PracticaReto\\Dominio\\Dominio.csproj",
+        "projectUniqueName": "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Dominio\\Dominio.csproj",
         "projectName": "Dominio",
-        "projectPath": "C:\\Users\\APT01-49\\Desktop\\PracticaReto\\Dominio\\Dominio.csproj",
+        "projectPath": "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Dominio\\Dominio.csproj",
         "packagesPath": "C:\\Users\\APT01-49\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\APT01-49\\Desktop\\PracticaReto\\Dominio\\obj\\",
+        "outputPath": "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\APT01-49\\AppData\\Roaming\\NuGet\\NuGet.Config"
