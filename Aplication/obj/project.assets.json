@@ -5240,11 +5240,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Aplication\\Aplication.csproj",
+      "projectUniqueName": "C:\\Users\\APT01-49\\Desktop\\PracticaReto\\Aplication\\Aplication.csproj",
       "projectName": "Aplication",
-      "projectPath": "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Aplication\\Aplication.csproj",
+      "projectPath": "C:\\Users\\APT01-49\\Desktop\\PracticaReto\\Aplication\\Aplication.csproj",
       "packagesPath": "C:\\Users\\APT01-49\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Aplication\\obj\\",
+      "outputPath": "C:\\Users\\APT01-49\\Desktop\\PracticaReto\\Aplication\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\APT01-49\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -5262,8 +5262,8 @@
             "C:\\Users\\APT01-49\\Desktop\\PracticaReto\\Dominio\\Dominio.csproj": {
               "projectPath": "C:\\Users\\APT01-49\\Desktop\\PracticaReto\\Dominio\\Dominio.csproj"
             },
-            "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Persistencia\\Persistencia.csproj": {
-              "projectPath": "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Persistencia\\Persistencia.csproj"
+            "C:\\Users\\APT01-49\\Desktop\\PracticaReto\\Persistencia\\Persistencia.csproj": {
+              "projectPath": "C:\\Users\\APT01-49\\Desktop\\PracticaReto\\Persistencia\\Persistencia.csproj"
             }
           }
         }

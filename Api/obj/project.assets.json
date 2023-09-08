@@ -6020,11 +6020,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Api\\Api.csproj",
+      "projectUniqueName": "C:\\Users\\APT01-49\\Desktop\\PracticaReto\\Api\\Api.csproj",
       "projectName": "Api",
-      "projectPath": "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Api\\Api.csproj",
+      "projectPath": "C:\\Users\\APT01-49\\Desktop\\PracticaReto\\Api\\Api.csproj",
       "packagesPath": "C:\\Users\\APT01-49\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Api\\obj\\",
+      "outputPath": "C:\\Users\\APT01-49\\Desktop\\PracticaReto\\Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\APT01-49\\AppData\\Roaming\\NuGet\\NuGet.Config"

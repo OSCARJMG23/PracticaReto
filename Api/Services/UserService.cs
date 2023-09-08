@@ -72,16 +72,17 @@ namespace Api.Services;
                 return $"No existe algun usuario registrado con la cuenta, olvido alguna caracter {model.Username}";
             }
             var resultado = _passwordHasher.VerifyHashedPassword(usuario, usuario.Password, model.Password);
+
             if(resultado == PasswordVerificationResult.Success)
             {
                 var rolExiste = _unitOfWork.Rols
-                                            .Find(u=>u.Nombre.ToLower()==model.Rol.ToLower())
+                                            .Find(u=>u.Nombre.ToLower() == model.Rol.ToLower())
                                             .FirstOrDefault();
-                if(rolExiste == null)
+                if(rolExiste != null)
                 {
-                    var usuarioTieneRol = usuario.Rols
-                                                    .Any(u =>u.Id == rolExiste.Id);
-                    if(usuarioTieneRol)
+                    var usuarioTieneRol = usuario.Rols.Any(u =>u.Id == rolExiste.Id);
+
+                    if(usuarioTieneRol == false)
                     {
                         usuario.Rols.Add(rolExiste);
                         _unitOfWork.Users.Update(usuario);
