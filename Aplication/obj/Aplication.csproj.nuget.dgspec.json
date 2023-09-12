@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\DDR5\\Desktop\\PracticaReto\\Aplication\\Aplication.csproj": {}
+    "C:\\Users\\APT01-49\\Desktop\\PracticaReto\\Aplication\\Aplication.csproj": {}
   },
   "projects": {
-    "c:\\Users\\DDR5\\Desktop\\PracticaReto\\Aplication\\Aplication.csproj": {
+    "C:\\Users\\APT01-49\\Desktop\\PracticaReto\\Aplication\\Aplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\DDR5\\Desktop\\PracticaReto\\Aplication\\Aplication.csproj",
+        "projectUniqueName": "C:\\Users\\APT01-49\\Desktop\\PracticaReto\\Aplication\\Aplication.csproj",
         "projectName": "Aplication",
-        "projectPath": "c:\\Users\\DDR5\\Desktop\\PracticaReto\\Aplication\\Aplication.csproj",
-        "packagesPath": "C:\\Users\\DDR5\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\DDR5\\Desktop\\PracticaReto\\Aplication\\obj\\",
+        "projectPath": "C:\\Users\\APT01-49\\Desktop\\PracticaReto\\Aplication\\Aplication.csproj",
+        "packagesPath": "C:\\Users\\APT01-49\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\APT01-49\\Desktop\\PracticaReto\\Aplication\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\DDR5\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\APT01-49\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -26,11 +26,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "c:\\Users\\DDR5\\Desktop\\PracticaReto\\Dominio\\Dominio.csproj": {
-                "projectPath": "c:\\Users\\DDR5\\Desktop\\PracticaReto\\Dominio\\Dominio.csproj"
+              "C:\\Users\\APT01-49\\Desktop\\PracticaReto\\Dominio\\Dominio.csproj": {
+                "projectPath": "C:\\Users\\APT01-49\\Desktop\\PracticaReto\\Dominio\\Dominio.csproj"
               },
-              "c:\\Users\\DDR5\\Desktop\\PracticaReto\\Persistencia\\Persistencia.csproj": {
-                "projectPath": "c:\\Users\\DDR5\\Desktop\\PracticaReto\\Persistencia\\Persistencia.csproj"
+              "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Persistencia\\Persistencia.csproj": {
+                "projectPath": "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Persistencia\\Persistencia.csproj"
               }
             }
           }
@@ -60,21 +60,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.305\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "c:\\Users\\DDR5\\Desktop\\PracticaReto\\Dominio\\Dominio.csproj": {
+    "C:\\Users\\APT01-49\\Desktop\\PracticaReto\\Dominio\\Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\DDR5\\Desktop\\PracticaReto\\Dominio\\Dominio.csproj",
+        "projectUniqueName": "C:\\Users\\APT01-49\\Desktop\\PracticaReto\\Dominio\\Dominio.csproj",
         "projectName": "Dominio",
-        "projectPath": "c:\\Users\\DDR5\\Desktop\\PracticaReto\\Dominio\\Dominio.csproj",
-        "packagesPath": "C:\\Users\\DDR5\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\DDR5\\Desktop\\PracticaReto\\Dominio\\obj\\",
+        "projectPath": "C:\\Users\\APT01-49\\Desktop\\PracticaReto\\Dominio\\Dominio.csproj",
+        "packagesPath": "C:\\Users\\APT01-49\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\APT01-49\\Desktop\\PracticaReto\\Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\DDR5\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\APT01-49\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -127,21 +127,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.305\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "c:\\Users\\DDR5\\Desktop\\PracticaReto\\Persistencia\\Persistencia.csproj": {
+    "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Persistencia\\Persistencia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\DDR5\\Desktop\\PracticaReto\\Persistencia\\Persistencia.csproj",
+        "projectUniqueName": "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Persistencia\\Persistencia.csproj",
         "projectName": "Persistencia",
-        "projectPath": "c:\\Users\\DDR5\\Desktop\\PracticaReto\\Persistencia\\Persistencia.csproj",
-        "packagesPath": "C:\\Users\\DDR5\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\DDR5\\Desktop\\PracticaReto\\Persistencia\\obj\\",
+        "projectPath": "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Persistencia\\Persistencia.csproj",
+        "packagesPath": "C:\\Users\\APT01-49\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Persistencia\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\DDR5\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\APT01-49\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -153,8 +153,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "c:\\Users\\DDR5\\Desktop\\PracticaReto\\Dominio\\Dominio.csproj": {
-                "projectPath": "c:\\Users\\DDR5\\Desktop\\PracticaReto\\Dominio\\Dominio.csproj"
+              "C:\\Users\\APT01-49\\Desktop\\PracticaReto\\Dominio\\Dominio.csproj": {
+                "projectPath": "C:\\Users\\APT01-49\\Desktop\\PracticaReto\\Dominio\\Dominio.csproj"
               }
             }
           }
@@ -194,7 +194,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.305\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

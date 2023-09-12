@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Security.Claims;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using Api.Dtos;
@@ -119,6 +120,21 @@ namespace Api.Services;
                     datosUsuarioDto.Roles = usuario.Rols
                                                     .Select(p=>p.Nombre)
                                                     .ToList();
+                    if (usuario.RefreshTokens.Any(a => a.IsActive))
+                    {
+                        var activeRefreshToken = usuario.RefreshTokens.Where(a=>a.IsActive ==true).FirstOrDefault();
+                        datosUsuarioDto.RefreshToken = activeRefreshToken.Token;
+                        datosUsuarioDto.RefreshTokenExpiration = activeRefreshToken.Expires;
+                    }
+                    else
+                    {
+                        var refreshToken = CreateRefreshToken();
+                        datosUsuarioDto.RefreshToken = refreshToken.Token;
+                        datosUsuarioDto.RefreshTokenExpiration = refreshToken.Expires;
+                        usuario.RefreshTokens.Add(refreshToken);
+                        _unitOfWork.Users.Update(usuario);
+                        await _unitOfWork.SaveAsync();
+                    }
                     return datosUsuarioDto;
                 }
                 else
@@ -164,5 +180,55 @@ namespace Api.Services;
                 expires: DateTime.Now.AddMinutes(_jWT.DurationInMinutes),
                 signingCredentials: signingCredentials);
             return JwtSecurityToken;
+        }
+        public async Task<DatosUsuarioDto> RefreshTokenAsync(string refreshToken)
+        {
+            var datausuarioDto = new DatosUsuarioDto();
+            var usuario = await _unitOfWork.Users
+                            .GetByRefreshTokenAsync(refreshToken);
+
+            if (usuario == null)
+            {
+                datausuarioDto.EstaAutenticado = false;
+                datausuarioDto.Mensaje = $"Token is not assigned to any user.";
+                return datausuarioDto;
+            }
+            var refreshTokenBd = usuario.RefreshTokens.Single(x => x.Token == refreshToken );
+            if (!refreshTokenBd.IsActive)
+            {
+                datausuarioDto.EstaAutenticado = false;
+                datausuarioDto.Mensaje = $"Token is not active.";
+                return datausuarioDto;
+            }
+            refreshTokenBd.Revoked = DateTime.UtcNow;
+            var newRefreshToken = CreateRefreshToken();
+            usuario.RefreshTokens.Add(newRefreshToken);
+            _unitOfWork.Users.Update(usuario);
+            await _unitOfWork.SaveAsync();
+            datausuarioDto.EstaAutenticado = true;
+            JwtSecurityToken jwtSecurityToken = CreateJwtToken(usuario);
+            datausuarioDto.Token = new JwtSecurityTokenHandler().WriteToken(jwtSecurityToken);
+            datausuarioDto.Email = usuario.UserEmail;
+            datausuarioDto.Username = usuario.UserName;
+            datausuarioDto.Roles = usuario.Rols
+                                                .Select(u => u.Nombre)
+                                                .ToList();
+            datausuarioDto.RefreshToken = newRefreshToken.Token;
+            datausuarioDto.RefreshTokenExpiration = newRefreshToken.Expires;
+            return datausuarioDto;
+        }
+        private RefreshToken CreateRefreshToken()
+        {
+            var randomNumber = new byte[32];
+            using (var generator = RandomNumberGenerator.Create())
+            {
+                generator.GetBytes(randomNumber);
+                return new RefreshToken
+                {
+                    Token = Convert.ToBase64String(randomNumber),
+                    Expires = DateTime.UtcNow.AddDays(10),
+                    Created = DateTime.UtcNow
+                };
+            }
         }
     }

@@ -46,6 +46,10 @@ namespace Persistencia.Data.Configurations
                 {
                     j.HasKey(t => new {t.UsuarioId, t.RolId  });
                 });
+
+            builder.HasMany(p => p.RefreshTokens)
+            .WithOne(p=>p.User)
+            .HasForeignKey(p=>p.UserId);
         }
     }
 }
