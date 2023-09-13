@@ -100,6 +100,7 @@ namespace Api.Services;
             DatosUsuarioDto datosUsuarioDto = new DatosUsuarioDto();
             var usuario = await _unitOfWork.Users
                             .GetByUserNameAsync(model.Username);
+        
             if(usuario == null)
             {
                 datosUsuarioDto.EstaAutenticado = false;
@@ -177,7 +178,7 @@ namespace Api.Services;
                 issuer: _jWT.Issuer,
                 audience: _jWT.Audience,
                 claims: claims,
-                expires: DateTime.Now.AddMinutes(_jWT.DurationInMinutes),
+                expires: DateTime.Now.AddSeconds(_jWT.DurationInMinutes),
                 signingCredentials: signingCredentials);
             return JwtSecurityToken;
         }
@@ -194,12 +195,14 @@ namespace Api.Services;
                 return datausuarioDto;
             }
             var refreshTokenBd = usuario.RefreshTokens.Single(x => x.Token == refreshToken );
+
             if (!refreshTokenBd.IsActive)
             {
                 datausuarioDto.EstaAutenticado = false;
                 datausuarioDto.Mensaje = $"Token is not active.";
                 return datausuarioDto;
             }
+
             refreshTokenBd.Revoked = DateTime.UtcNow;
             var newRefreshToken = CreateRefreshToken();
             usuario.RefreshTokens.Add(newRefreshToken);
