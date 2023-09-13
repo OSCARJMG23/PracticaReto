@@ -5216,19 +5216,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\APT01-49\\.nuget\\packages\\": {}
+    "C:\\Users\\DDR5\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Persistencia\\Persistencia.csproj",
+      "projectUniqueName": "c:\\Users\\DDR5\\Desktop\\PracticaReto\\Persistencia\\Persistencia.csproj",
       "projectName": "Persistencia",
-      "projectPath": "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Persistencia\\Persistencia.csproj",
-      "packagesPath": "C:\\Users\\APT01-49\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Persistencia\\obj\\",
+      "projectPath": "c:\\Users\\DDR5\\Desktop\\PracticaReto\\Persistencia\\Persistencia.csproj",
+      "packagesPath": "C:\\Users\\DDR5\\.nuget\\packages\\",
+      "outputPath": "c:\\Users\\DDR5\\Desktop\\PracticaReto\\Persistencia\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\APT01-49\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\DDR5\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -5240,8 +5240,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\APT01-49\\Desktop\\PracticaReto\\Dominio\\Dominio.csproj": {
-              "projectPath": "C:\\Users\\APT01-49\\Desktop\\PracticaReto\\Dominio\\Dominio.csproj"
+            "C:\\Users\\DDR5\\Desktop\\PracticaReto\\Dominio\\Dominio.csproj": {
+              "projectPath": "C:\\Users\\DDR5\\Desktop\\PracticaReto\\Dominio\\Dominio.csproj"
             }
           }
         }
@@ -5281,7 +5281,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.305\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -38,5 +38,11 @@ public class UsuarioController : ApiBaseController
         var result = await _userService.AddRoleAsync(model);
         return Ok(result);
     }
+    [HttpPost("refreshToken")]
+    public async Task<ActionResult> GetRefreshToken(DatosUsuarioDto model)
+    {
+        var result = await _userService.RefreshTokenAsync(model.RefreshToken);
+        return Ok(result);
+    }
 }
 
