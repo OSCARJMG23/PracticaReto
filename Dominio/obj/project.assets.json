@@ -5050,11 +5050,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\DDR5\\Desktop\\PracticaReto\\Dominio\\Dominio.csproj",
+      "projectUniqueName": "C:\\Users\\DDR5\\Desktop\\PracticaReto\\Dominio\\Dominio.csproj",
       "projectName": "Dominio",
-      "projectPath": "c:\\Users\\DDR5\\Desktop\\PracticaReto\\Dominio\\Dominio.csproj",
+      "projectPath": "C:\\Users\\DDR5\\Desktop\\PracticaReto\\Dominio\\Dominio.csproj",
       "packagesPath": "C:\\Users\\DDR5\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\DDR5\\Desktop\\PracticaReto\\Dominio\\obj\\",
+      "outputPath": "C:\\Users\\DDR5\\Desktop\\PracticaReto\\Dominio\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\DDR5\\AppData\\Roaming\\NuGet\\NuGet.Config"

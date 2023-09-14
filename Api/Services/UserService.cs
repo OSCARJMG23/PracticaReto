@@ -100,6 +100,7 @@ namespace Api.Services;
             DatosUsuarioDto datosUsuarioDto = new DatosUsuarioDto();
             var usuario = await _unitOfWork.Users
                             .GetByUserNameAsync(model.Username);
+        
             if(usuario == null)
             {
                 datosUsuarioDto.EstaAutenticado = false;
@@ -164,6 +165,7 @@ namespace Api.Services;
             {
                 new Claim(JwtRegisteredClaimNames.Sub, usuario.UserName),
                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+                new Claim(JwtRegisteredClaimNames.Email, usuario.UserEmail),
                 new Claim("uid", usuario.Id.ToString())
             }
             .Union(roleClaims);
@@ -194,12 +196,14 @@ namespace Api.Services;
                 return datausuarioDto;
             }
             var refreshTokenBd = usuario.RefreshTokens.Single(x => x.Token == refreshToken );
+
             if (!refreshTokenBd.IsActive)
             {
                 datausuarioDto.EstaAutenticado = false;
                 datausuarioDto.Mensaje = $"Token is not active.";
                 return datausuarioDto;
             }
+
             refreshTokenBd.Revoked = DateTime.UtcNow;
             var newRefreshToken = CreateRefreshToken();
             usuario.RefreshTokens.Add(newRefreshToken);
@@ -208,8 +212,8 @@ namespace Api.Services;
             datausuarioDto.EstaAutenticado = true;
             JwtSecurityToken jwtSecurityToken = CreateJwtToken(usuario);
             datausuarioDto.Token = new JwtSecurityTokenHandler().WriteToken(jwtSecurityToken);
-            datausuarioDto.Email = usuario.UserEmail;
             datausuarioDto.Username = usuario.UserName;
+            datausuarioDto.Email = usuario.UserEmail;
             datausuarioDto.Roles = usuario.Rols
                                                 .Select(u => u.Nombre)
                                                 .ToList();
