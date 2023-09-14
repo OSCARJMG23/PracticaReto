@@ -165,6 +165,7 @@ namespace Api.Services;
             {
                 new Claim(JwtRegisteredClaimNames.Sub, usuario.UserName),
                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+                new Claim(JwtRegisteredClaimNames.Email, usuario.UserEmail),
                 new Claim("uid", usuario.Id.ToString())
             }
             .Union(roleClaims);
@@ -211,8 +212,8 @@ namespace Api.Services;
             datausuarioDto.EstaAutenticado = true;
             JwtSecurityToken jwtSecurityToken = CreateJwtToken(usuario);
             datausuarioDto.Token = new JwtSecurityTokenHandler().WriteToken(jwtSecurityToken);
-            datausuarioDto.Email = usuario.UserEmail;
             datausuarioDto.Username = usuario.UserName;
+            datausuarioDto.Email = usuario.UserEmail;
             datausuarioDto.Roles = usuario.Rols
                                                 .Select(u => u.Nombre)
                                                 .ToList();
