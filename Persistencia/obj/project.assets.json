@@ -5221,11 +5221,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DDR5\\Desktop\\PracticaReto\\Persistencia\\Persistencia.csproj",
+      "projectUniqueName": "c:\\Users\\DDR5\\Desktop\\PracticaReto\\Persistencia\\Persistencia.csproj",
       "projectName": "Persistencia",
-      "projectPath": "C:\\Users\\DDR5\\Desktop\\PracticaReto\\Persistencia\\Persistencia.csproj",
+      "projectPath": "c:\\Users\\DDR5\\Desktop\\PracticaReto\\Persistencia\\Persistencia.csproj",
       "packagesPath": "C:\\Users\\DDR5\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DDR5\\Desktop\\PracticaReto\\Persistencia\\obj\\",
+      "outputPath": "c:\\Users\\DDR5\\Desktop\\PracticaReto\\Persistencia\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\DDR5\\AppData\\Roaming\\NuGet\\NuGet.Config"

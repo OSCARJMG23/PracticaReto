@@ -179,7 +179,7 @@ namespace Api.Services;
                 issuer: _jWT.Issuer,
                 audience: _jWT.Audience,
                 claims: claims,
-                expires: DateTime.Now.AddMinutes(_jWT.DurationInMinutes),
+                expires: DateTime.Now.AddSeconds(_jWT.DurationInMinutes),
                 signingCredentials: signingCredentials);
             return JwtSecurityToken;
         }

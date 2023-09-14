@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DDR5\\Desktop\\PracticaReto\\Api\\Api.csproj": {}
+    "c:\\Users\\DDR5\\Desktop\\PracticaReto\\Api\\Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DDR5\\Desktop\\PracticaReto\\Api\\Api.csproj": {
+    "c:\\Users\\DDR5\\Desktop\\PracticaReto\\Api\\Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DDR5\\Desktop\\PracticaReto\\Api\\Api.csproj",
+        "projectUniqueName": "c:\\Users\\DDR5\\Desktop\\PracticaReto\\Api\\Api.csproj",
         "projectName": "Api",
-        "projectPath": "C:\\Users\\DDR5\\Desktop\\PracticaReto\\Api\\Api.csproj",
+        "projectPath": "c:\\Users\\DDR5\\Desktop\\PracticaReto\\Api\\Api.csproj",
         "packagesPath": "C:\\Users\\DDR5\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DDR5\\Desktop\\PracticaReto\\Api\\obj\\",
+        "outputPath": "c:\\Users\\DDR5\\Desktop\\PracticaReto\\Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DDR5\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -122,8 +122,8 @@
               "C:\\Users\\DDR5\\Desktop\\PracticaReto\\Dominio\\Dominio.csproj": {
                 "projectPath": "C:\\Users\\DDR5\\Desktop\\PracticaReto\\Dominio\\Dominio.csproj"
               },
-              "C:\\Users\\DDR5\\Desktop\\PracticaReto\\Persistencia\\Persistencia.csproj": {
-                "projectPath": "C:\\Users\\DDR5\\Desktop\\PracticaReto\\Persistencia\\Persistencia.csproj"
+              "c:\\Users\\DDR5\\Desktop\\PracticaReto\\Persistencia\\Persistencia.csproj": {
+                "projectPath": "c:\\Users\\DDR5\\Desktop\\PracticaReto\\Persistencia\\Persistencia.csproj"
               }
             }
           }
@@ -224,14 +224,14 @@
         }
       }
     },
-    "C:\\Users\\DDR5\\Desktop\\PracticaReto\\Persistencia\\Persistencia.csproj": {
+    "c:\\Users\\DDR5\\Desktop\\PracticaReto\\Persistencia\\Persistencia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DDR5\\Desktop\\PracticaReto\\Persistencia\\Persistencia.csproj",
+        "projectUniqueName": "c:\\Users\\DDR5\\Desktop\\PracticaReto\\Persistencia\\Persistencia.csproj",
         "projectName": "Persistencia",
-        "projectPath": "C:\\Users\\DDR5\\Desktop\\PracticaReto\\Persistencia\\Persistencia.csproj",
+        "projectPath": "c:\\Users\\DDR5\\Desktop\\PracticaReto\\Persistencia\\Persistencia.csproj",
         "packagesPath": "C:\\Users\\DDR5\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DDR5\\Desktop\\PracticaReto\\Persistencia\\obj\\",
+        "outputPath": "c:\\Users\\DDR5\\Desktop\\PracticaReto\\Persistencia\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DDR5\\AppData\\Roaming\\NuGet\\NuGet.Config"
