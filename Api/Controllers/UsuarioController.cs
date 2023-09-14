@@ -39,10 +39,25 @@ public class UsuarioController : ApiBaseController
         return Ok(result);
     }
     [HttpPost("refreshToken")]
-    public async Task<ActionResult> GetRefreshToken(DatosUsuarioDto model)
+    public async Task<ActionResult> GetRefreshToken()
     {
-        var result = await _userService.RefreshTokenAsync(model.RefreshToken);
+        var refreshToken = Request.Cookies["refreshToken"];
+        var result = await _userService.RefreshTokenAsync(refreshToken);
+        if (!string.IsNullOrEmpty(result.RefreshToken))
+        {
+            
+        }
         return Ok(result);
+    }
+
+    private void SerRefreshTokenInCookies(string refreshToken)
+    {
+        var cookiesOptions = new CookieOptions
+        {
+            HttpOnly = true,
+            Expires = DateTime.UtcNow.AddDays(10)
+        };
+        Response.Cookies.Append("refreshToken", refreshToken, cookiesOptions);
     }
 }
 

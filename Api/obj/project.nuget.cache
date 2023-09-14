@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YSwAXIgaElLjXSk+U6lnMlBWCSUR0Et1Qo0OWEJFtFE9uwIkXFumQ3J5RJwKPNInKS3u08usvWnX0LA4CvofgQ==",
+  "dgSpecHash": "xEXL7sN0RNvZe/Axw0OfMlGQOYC+UaG7sbCXmZQ1TsHj1YPNF4Euc2Cxk0F4lbd3VFaCKi8MRKHx62VczrmHiA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\APT01-49\\Desktop\\PracticaReto\\Api\\Api.csproj",
+  "projectFilePath": "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Api\\Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\APT01-49\\.nuget\\packages\\aspnetcoreratelimit\\5.0.0\\aspnetcoreratelimit.5.0.0.nupkg.sha512",
     "C:\\Users\\APT01-49\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",

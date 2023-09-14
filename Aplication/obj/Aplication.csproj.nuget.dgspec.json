@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\APT01-49\\Desktop\\PracticaReto\\Aplication\\Aplication.csproj": {}
+    "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Aplication\\Aplication.csproj": {}
   },
   "projects": {
-    "C:\\Users\\APT01-49\\Desktop\\PracticaReto\\Aplication\\Aplication.csproj": {
+    "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Aplication\\Aplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\APT01-49\\Desktop\\PracticaReto\\Aplication\\Aplication.csproj",
+        "projectUniqueName": "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Aplication\\Aplication.csproj",
         "projectName": "Aplication",
-        "projectPath": "C:\\Users\\APT01-49\\Desktop\\PracticaReto\\Aplication\\Aplication.csproj",
+        "projectPath": "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Aplication\\Aplication.csproj",
         "packagesPath": "C:\\Users\\APT01-49\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\APT01-49\\Desktop\\PracticaReto\\Aplication\\obj\\",
+        "outputPath": "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Aplication\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\APT01-49\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -26,11 +26,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\APT01-49\\Desktop\\PracticaReto\\Dominio\\Dominio.csproj": {
-                "projectPath": "C:\\Users\\APT01-49\\Desktop\\PracticaReto\\Dominio\\Dominio.csproj"
+              "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Dominio\\Dominio.csproj": {
+                "projectPath": "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Dominio\\Dominio.csproj"
               },
-              "C:\\Users\\APT01-49\\Desktop\\PracticaReto\\Persistencia\\Persistencia.csproj": {
-                "projectPath": "C:\\Users\\APT01-49\\Desktop\\PracticaReto\\Persistencia\\Persistencia.csproj"
+              "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Persistencia\\Persistencia.csproj": {
+                "projectPath": "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Persistencia\\Persistencia.csproj"
               }
             }
           }
@@ -64,14 +64,14 @@
         }
       }
     },
-    "C:\\Users\\APT01-49\\Desktop\\PracticaReto\\Dominio\\Dominio.csproj": {
+    "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Dominio\\Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\APT01-49\\Desktop\\PracticaReto\\Dominio\\Dominio.csproj",
+        "projectUniqueName": "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Dominio\\Dominio.csproj",
         "projectName": "Dominio",
-        "projectPath": "C:\\Users\\APT01-49\\Desktop\\PracticaReto\\Dominio\\Dominio.csproj",
+        "projectPath": "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Dominio\\Dominio.csproj",
         "packagesPath": "C:\\Users\\APT01-49\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\APT01-49\\Desktop\\PracticaReto\\Dominio\\obj\\",
+        "outputPath": "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\APT01-49\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -131,14 +131,14 @@
         }
       }
     },
-    "C:\\Users\\APT01-49\\Desktop\\PracticaReto\\Persistencia\\Persistencia.csproj": {
+    "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Persistencia\\Persistencia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\APT01-49\\Desktop\\PracticaReto\\Persistencia\\Persistencia.csproj",
+        "projectUniqueName": "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Persistencia\\Persistencia.csproj",
         "projectName": "Persistencia",
-        "projectPath": "C:\\Users\\APT01-49\\Desktop\\PracticaReto\\Persistencia\\Persistencia.csproj",
+        "projectPath": "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Persistencia\\Persistencia.csproj",
         "packagesPath": "C:\\Users\\APT01-49\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\APT01-49\\Desktop\\PracticaReto\\Persistencia\\obj\\",
+        "outputPath": "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Persistencia\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\APT01-49\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -153,8 +153,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\APT01-49\\Desktop\\PracticaReto\\Dominio\\Dominio.csproj": {
-                "projectPath": "C:\\Users\\APT01-49\\Desktop\\PracticaReto\\Dominio\\Dominio.csproj"
+              "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Dominio\\Dominio.csproj": {
+                "projectPath": "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Dominio\\Dominio.csproj"
               }
             }
           }
