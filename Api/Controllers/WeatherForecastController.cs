@@ -19,7 +19,7 @@ public class WeatherForecastController : ApiBaseController
     }
 
     [HttpGet]
-    [Authorize(Roles ="Administrator")]
+    [Authorize(Roles ="Administrador")]
     public IEnumerable<WeatherForecast> Get()
     {
         return Enumerable.Range(1, 5).Select(index => new WeatherForecast

@@ -5045,19 +5045,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\DDR5\\.nuget\\packages\\": {}
+    "C:\\Users\\APT01-49\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DDR5\\Desktop\\PracticaReto\\Dominio\\Dominio.csproj",
+      "projectUniqueName": "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Dominio\\Dominio.csproj",
       "projectName": "Dominio",
-      "projectPath": "C:\\Users\\DDR5\\Desktop\\PracticaReto\\Dominio\\Dominio.csproj",
-      "packagesPath": "C:\\Users\\DDR5\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DDR5\\Desktop\\PracticaReto\\Dominio\\obj\\",
+      "projectPath": "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Dominio\\Dominio.csproj",
+      "packagesPath": "C:\\Users\\APT01-49\\.nuget\\packages\\",
+      "outputPath": "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Dominio\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\DDR5\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\APT01-49\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -5110,16 +5110,8 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.305\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema al leer el archivo de caché C:\\Users\\DDR5\\Desktop\\PracticaReto\\Dominio\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }
