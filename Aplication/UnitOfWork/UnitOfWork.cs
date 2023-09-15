@@ -20,17 +20,6 @@ namespace Aplication.UnitOfWork;
             _context = context; 
         }
 
-        public IUserInterface Users
-        {
-            get
-            {
-                if(_users == null)
-                {
-                    _users = new UserRepository(_context);
-                }
-                return _users;
-            }
-        }
         public IRolInterface Rols
         {
             get
@@ -42,6 +31,18 @@ namespace Aplication.UnitOfWork;
                 return _rols;
             }
         }
+        public IUserInterface Users
+        {
+            get
+            {
+                if(_users == null)
+                {
+                    _users = new UserRepository(_context);
+                }
+                return _users;
+            }
+        }
+
         public async Task<int> SaveAsync()
         {
             return await _context.SaveChangesAsync();

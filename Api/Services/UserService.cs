@@ -63,6 +63,53 @@ namespace Api.Services;
                 return $"El usuario {registerDto.Username} ya se encuentra registrado";
             }
         }
+
+        public async Task<DatosUsuarioDto> GetTokenAsync(LoginDto model)
+        {
+            DatosUsuarioDto datosUsuarioDto = new DatosUsuarioDto();
+            var usuario = await _unitOfWork.Users
+                            .GetByUserNameAsync(model.Username);
+        
+            if(usuario == null)
+            {
+                datosUsuarioDto.EstaAutenticado = false;
+                datosUsuarioDto.Mensaje =$"No existe ningun usuario con el username {model.Username}";
+                return datosUsuarioDto;
+            }
+            var resultado = _passwordHasher.VerifyHashedPassword(usuario, usuario.Password, model.Password);
+
+            if(resultado == PasswordVerificationResult.Success)
+            {
+                datosUsuarioDto.Mensaje ="Ok";
+                datosUsuarioDto.EstaAutenticado = true;
+                JwtSecurityToken jwtSecurityToken = CreateJwtToken(usuario);
+                datosUsuarioDto.Token = new JwtSecurityTokenHandler().WriteToken(jwtSecurityToken);
+                datosUsuarioDto.Username = usuario.UserName;
+                datosUsuarioDto.Email = usuario.UserEmail;
+                datosUsuarioDto.Roles = usuario.Rols
+                                                .Select(p=>p.Nombre)
+                                                .ToList();
+                if (usuario.RefreshTokens.Any(a => a.IsActive))
+                {
+                    var activeRefreshToken = usuario.RefreshTokens.Where(a=>a.IsActive ==true).FirstOrDefault();
+                    datosUsuarioDto.RefreshToken = activeRefreshToken.Token;
+                    datosUsuarioDto.RefreshTokenExpiration = activeRefreshToken.Expires;
+                }
+                else
+                {
+                    var refreshToken = CreateRefreshToken();
+                    datosUsuarioDto.RefreshToken = refreshToken.Token;
+                    datosUsuarioDto.RefreshTokenExpiration = refreshToken.Expires;
+                    usuario.RefreshTokens.Add(refreshToken);
+                    _unitOfWork.Users.Update(usuario);
+                    await _unitOfWork.SaveAsync();
+                }
+                return datosUsuarioDto;
+            }
+            datosUsuarioDto.EstaAutenticado = false;
+            datosUsuarioDto.Mensaje =$"Credenciales incorrectas para el usuario {usuario.UserName}";
+            return datosUsuarioDto;
+        }
         public async Task<string> AddRoleAsync(AddRoleDto model)
         {
             var usuario = await _unitOfWork.Users
@@ -94,94 +141,6 @@ namespace Api.Services;
                 return $"Rol {model.Rol} no encontrado";
             }
             return $"Credenciales incorrectas para el usuario {usuario.UserName}";
-        }
-        public async Task<DatosUsuarioDto> GetTokenAsync(LoginDto model)
-        {
-            DatosUsuarioDto datosUsuarioDto = new DatosUsuarioDto();
-            var usuario = await _unitOfWork.Users
-                            .GetByUserNameAsync(model.Username);
-        
-            if(usuario == null)
-            {
-                datosUsuarioDto.EstaAutenticado = false;
-                datosUsuarioDto.Mensaje =$"No existe ningun usuario con el username {model.Username}";
-                return datosUsuarioDto;
-            }
-            var resultado = _passwordHasher.VerifyHashedPassword(usuario, usuario.Password, model.Password);
-            if(resultado == PasswordVerificationResult.Success)
-            {
-                datosUsuarioDto.Mensaje ="Ok";
-                datosUsuarioDto.EstaAutenticado = true;
-                if(usuario != null)
-                {
-                    JwtSecurityToken jwtSecurityToken = CreateJwtToken(usuario);
-                    datosUsuarioDto.Token = new JwtSecurityTokenHandler().WriteToken(jwtSecurityToken);
-                    datosUsuarioDto.Username = usuario.UserName;
-                    datosUsuarioDto.Email = usuario.UserEmail;
-                    datosUsuarioDto.Roles = usuario.Rols
-                                                    .Select(p=>p.Nombre)
-                                                    .ToList();
-                    if (usuario.RefreshTokens.Any(a => a.IsActive))
-                    {
-                        var activeRefreshToken = usuario.RefreshTokens.Where(a=>a.IsActive ==true).FirstOrDefault();
-                        datosUsuarioDto.RefreshToken = activeRefreshToken.Token;
-                        datosUsuarioDto.RefreshTokenExpiration = activeRefreshToken.Expires;
-                    }
-                    else
-                    {
-                        var refreshToken = CreateRefreshToken();
-                        datosUsuarioDto.RefreshToken = refreshToken.Token;
-                        datosUsuarioDto.RefreshTokenExpiration = refreshToken.Expires;
-                        usuario.RefreshTokens.Add(refreshToken);
-                        _unitOfWork.Users.Update(usuario);
-                        await _unitOfWork.SaveAsync();
-                    }
-                    return datosUsuarioDto;
-                }
-                else
-                {
-                    datosUsuarioDto.EstaAutenticado = false;
-                    datosUsuarioDto.Mensaje = $"Credenciales incorrectas para el usuario {usuario.UserName}";
-                    return datosUsuarioDto;
-                }
-            }
-            datosUsuarioDto.EstaAutenticado = false;
-            datosUsuarioDto.Mensaje =$"Credenciales incorrectas para el usuario {usuario.UserName}";
-            return datosUsuarioDto;
-        }
-        private JwtSecurityToken CreateJwtToken(User usuario)
-        {
-            if(usuario == null)
-            {
-                throw new ArgumentNullException(nameof(usuario), "El usuario no puede ser nulo");
-            }
-            var roles = usuario.Rols;
-            var roleClaims = new List<Claim>();
-            foreach (var role in roles)
-            {
-                roleClaims.Add(new Claim("roles", role.Nombre));
-            }
-            var claims = new[]
-            {
-                new Claim(JwtRegisteredClaimNames.Sub, usuario.UserName),
-                new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-                new Claim(JwtRegisteredClaimNames.Email, usuario.UserEmail),
-                new Claim("uid", usuario.Id.ToString())
-            }
-            .Union(roleClaims);
-            if(string.IsNullOrEmpty(_jWT.Key) || string.IsNullOrEmpty(_jWT.Issuer)|| string.IsNullOrEmpty(_jWT.Audience))
-            {
-                throw new ArgumentException("La condiguracion del JWT es nula o vacia");
-            }
-            var symmetricSecurityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jWT.Key));
-            var signingCredentials = new SigningCredentials(symmetricSecurityKey, SecurityAlgorithms.HmacSha256Signature);
-            var JwtSecurityToken = new JwtSecurityToken(
-                issuer: _jWT.Issuer,
-                audience: _jWT.Audience,
-                claims: claims,
-                expires: DateTime.Now.AddSeconds(_jWT.DurationInMinutes),
-                signingCredentials: signingCredentials);
-            return JwtSecurityToken;
         }
         public async Task<DatosUsuarioDto> RefreshTokenAsync(string refreshToken)
         {
@@ -234,5 +193,39 @@ namespace Api.Services;
                     Created = DateTime.UtcNow
                 };
             }
+        }
+        private JwtSecurityToken CreateJwtToken(User usuario)
+        {
+            if(usuario == null)
+            {
+                throw new ArgumentNullException(nameof(usuario), "El usuario no puede ser nulo");
+            }
+            var roles = usuario.Rols;
+            var roleClaims = new List<Claim>();
+            foreach (var role in roles)
+            {
+                roleClaims.Add(new Claim("roles", role.Nombre));
+            }
+            var claims = new[]
+            {
+                new Claim(JwtRegisteredClaimNames.Sub, usuario.UserName),
+                new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+                new Claim(JwtRegisteredClaimNames.Email, usuario.UserEmail),
+                new Claim("uid", usuario.Id.ToString())
+            }
+            .Union(roleClaims);
+            if(string.IsNullOrEmpty(_jWT.Key) || string.IsNullOrEmpty(_jWT.Issuer)|| string.IsNullOrEmpty(_jWT.Audience))
+            {
+                throw new ArgumentException("La condiguracion del JWT es nula o vacia");
+            }
+            var symmetricSecurityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jWT.Key));
+            var signingCredentials = new SigningCredentials(symmetricSecurityKey, SecurityAlgorithms.HmacSha256Signature);
+            var JwtSecurityToken = new JwtSecurityToken(
+                issuer: _jWT.Issuer,
+                audience: _jWT.Audience,
+                claims: claims,
+                expires: DateTime.Now.AddSeconds(_jWT.DurationInMinutes),
+                signingCredentials: signingCredentials);
+            return JwtSecurityToken;
         }
     }

@@ -5221,19 +5221,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Persistencia\\Persistencia.csproj",
+      "projectUniqueName": "C:\\Users\\DDR5\\Desktop\\PracticaReto\\Persistencia\\Persistencia.csproj",
       "projectName": "Persistencia",
-      "projectPath": "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Persistencia\\Persistencia.csproj",
-      "packagesPath": "C:\\Users\\APT01-49\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Persistencia\\obj\\",
-=======
-      "projectUniqueName": "c:\\Users\\DDR5\\Desktop\\PracticaReto\\Persistencia\\Persistencia.csproj",
-      "projectName": "Persistencia",
-      "projectPath": "c:\\Users\\DDR5\\Desktop\\PracticaReto\\Persistencia\\Persistencia.csproj",
+      "projectPath": "C:\\Users\\DDR5\\Desktop\\PracticaReto\\Persistencia\\Persistencia.csproj",
       "packagesPath": "C:\\Users\\DDR5\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\DDR5\\Desktop\\PracticaReto\\Persistencia\\obj\\",
->>>>>>> bd6d7a660e4f20c3e34d006b662aa2f85306ee55
+      "outputPath": "C:\\Users\\DDR5\\Desktop\\PracticaReto\\Persistencia\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\DDR5\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -5248,13 +5240,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-<<<<<<< HEAD
-            "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Dominio\\Dominio.csproj": {
-              "projectPath": "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Dominio\\Dominio.csproj"
-=======
             "C:\\Users\\DDR5\\Desktop\\PracticaReto\\Dominio\\Dominio.csproj": {
               "projectPath": "C:\\Users\\DDR5\\Desktop\\PracticaReto\\Dominio\\Dominio.csproj"
->>>>>>> bd6d7a660e4f20c3e34d006b662aa2f85306ee55
             }
           }
         }

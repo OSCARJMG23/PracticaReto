@@ -7,8 +7,9 @@ namespace Dominio.Interfaces
 {
     public interface IUnitOfWork
     {
-        IUserInterface Users {get;}
         IRolInterface Rols {get;}
+        IUserInterface Users {get;}
+
         Task<int> SaveAsync();
     }
 }

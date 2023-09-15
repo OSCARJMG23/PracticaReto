@@ -1,14 +1,8 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "xEXL7sN0RNvZe/Axw0OfMlGQOYC+UaG7sbCXmZQ1TsHj1YPNF4Euc2Cxk0F4lbd3VFaCKi8MRKHx62VczrmHiA==",
+  "dgSpecHash": "/aXYY3HLZa5vXV/y5ZN5ixJKes4D5nulqrtD14oAAM6LVPsXyVGWW1jZhRosWXfKCf0mbIfpFSmnq7Wf40KwdA==",
   "success": true,
-  "projectFilePath": "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Api\\Api.csproj",
-=======
-  "dgSpecHash": "YKR1Eihjg/CXE8dmeVKKoLYdVxz4FqYT69B4AMDP0FWyobFESf3dA9RlhPTButEymYkBJCLXXJeZ77BBLVXi3w==",
-  "success": true,
-  "projectFilePath": "c:\\Users\\DDR5\\Desktop\\PracticaReto\\Api\\Api.csproj",
->>>>>>> bd6d7a660e4f20c3e34d006b662aa2f85306ee55
+  "projectFilePath": "C:\\Users\\DDR5\\Desktop\\PracticaReto\\Api\\Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DDR5\\.nuget\\packages\\aspnetcoreratelimit\\5.0.0\\aspnetcoreratelimit.5.0.0.nupkg.sha512",
     "C:\\Users\\DDR5\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",

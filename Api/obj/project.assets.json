@@ -6020,19 +6020,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Api\\Api.csproj",
+      "projectUniqueName": "C:\\Users\\DDR5\\Desktop\\PracticaReto\\Api\\Api.csproj",
       "projectName": "Api",
-      "projectPath": "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Api\\Api.csproj",
-      "packagesPath": "C:\\Users\\APT01-49\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Api\\obj\\",
-=======
-      "projectUniqueName": "c:\\Users\\DDR5\\Desktop\\PracticaReto\\Api\\Api.csproj",
-      "projectName": "Api",
-      "projectPath": "c:\\Users\\DDR5\\Desktop\\PracticaReto\\Api\\Api.csproj",
+      "projectPath": "C:\\Users\\DDR5\\Desktop\\PracticaReto\\Api\\Api.csproj",
       "packagesPath": "C:\\Users\\DDR5\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\DDR5\\Desktop\\PracticaReto\\Api\\obj\\",
->>>>>>> bd6d7a660e4f20c3e34d006b662aa2f85306ee55
+      "outputPath": "C:\\Users\\DDR5\\Desktop\\PracticaReto\\Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\DDR5\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -6048,13 +6040,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-<<<<<<< HEAD
-            "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Aplication\\Aplication.csproj": {
-              "projectPath": "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Aplication\\Aplication.csproj"
-=======
             "C:\\Users\\DDR5\\Desktop\\PracticaReto\\Aplication\\Aplication.csproj": {
               "projectPath": "C:\\Users\\DDR5\\Desktop\\PracticaReto\\Aplication\\Aplication.csproj"
->>>>>>> bd6d7a660e4f20c3e34d006b662aa2f85306ee55
             }
           }
         }

@@ -1,14 +1,8 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "+3YssKjJN3Jd961QasCBOt15q0Yl7vDAKvmx1nRq8KKDUj7FVkDlecXse55wIp8MeJuDhV97bKVfrFYzPWL0AQ==",
+  "dgSpecHash": "BbxXcexwk6zBmXZO0Pn2Z69hn54MJzw/zZJO11rtcVVEmQGRFU5DR4TajdCw46F2BG+3mqGftPJ8VV1y4FWMwg==",
   "success": true,
-  "projectFilePath": "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Persistencia\\Persistencia.csproj",
-=======
-  "dgSpecHash": "7ew0RrsHNE5MBVMA5yYwUL7X+CZtxavNM/fGr9aERco5XGtMmEYl7eJxZOr17ja08rFm8zm14e+qiN6Z7B1lQw==",
-  "success": true,
-  "projectFilePath": "c:\\Users\\DDR5\\Desktop\\PracticaReto\\Persistencia\\Persistencia.csproj",
->>>>>>> bd6d7a660e4f20c3e34d006b662aa2f85306ee55
+  "projectFilePath": "C:\\Users\\DDR5\\Desktop\\PracticaReto\\Persistencia\\Persistencia.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DDR5\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",
     "C:\\Users\\DDR5\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",

@@ -29,6 +29,7 @@ public class UsuarioController : ApiBaseController
     public async Task<IActionResult> GetTokenAsync(LoginDto model)
     {
         var result = await _userService.GetTokenAsync(model);
+        SetRefreshTokenInCookies(result.RefreshToken);
         return Ok(result);
     }
 
@@ -38,19 +39,19 @@ public class UsuarioController : ApiBaseController
         var result = await _userService.AddRoleAsync(model);
         return Ok(result);
     }
-    [HttpPost("refreshToken")]
+    [HttpPost("refresh-Token")]
     public async Task<ActionResult> GetRefreshToken()
     {
         var refreshToken = Request.Cookies["refreshToken"];
         var result = await _userService.RefreshTokenAsync(refreshToken);
         if (!string.IsNullOrEmpty(result.RefreshToken))
         {
-            
+            SetRefreshTokenInCookies(result.RefreshToken);
         }
         return Ok(result);
     }
 
-    private void SerRefreshTokenInCookies(string refreshToken)
+    private void SetRefreshTokenInCookies(string refreshToken)
     {
         var cookiesOptions = new CookieOptions
         {

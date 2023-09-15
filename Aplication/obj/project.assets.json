@@ -5240,19 +5240,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Aplication\\Aplication.csproj",
+      "projectUniqueName": "C:\\Users\\DDR5\\Desktop\\PracticaReto\\Aplication\\Aplication.csproj",
       "projectName": "Aplication",
-      "projectPath": "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Aplication\\Aplication.csproj",
-      "packagesPath": "C:\\Users\\APT01-49\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Aplication\\obj\\",
-=======
-      "projectUniqueName": "c:\\Users\\DDR5\\Desktop\\PracticaReto\\Aplication\\Aplication.csproj",
-      "projectName": "Aplication",
-      "projectPath": "c:\\Users\\DDR5\\Desktop\\PracticaReto\\Aplication\\Aplication.csproj",
+      "projectPath": "C:\\Users\\DDR5\\Desktop\\PracticaReto\\Aplication\\Aplication.csproj",
       "packagesPath": "C:\\Users\\DDR5\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\DDR5\\Desktop\\PracticaReto\\Aplication\\obj\\",
->>>>>>> bd6d7a660e4f20c3e34d006b662aa2f85306ee55
+      "outputPath": "C:\\Users\\DDR5\\Desktop\\PracticaReto\\Aplication\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\DDR5\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -5267,19 +5259,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-<<<<<<< HEAD
-            "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Dominio\\Dominio.csproj": {
-              "projectPath": "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Dominio\\Dominio.csproj"
-            },
-            "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Persistencia\\Persistencia.csproj": {
-              "projectPath": "c:\\Users\\APT01-49\\Desktop\\PracticaReto\\Persistencia\\Persistencia.csproj"
-=======
             "C:\\Users\\DDR5\\Desktop\\PracticaReto\\Dominio\\Dominio.csproj": {
               "projectPath": "C:\\Users\\DDR5\\Desktop\\PracticaReto\\Dominio\\Dominio.csproj"
             },
-            "c:\\Users\\DDR5\\Desktop\\PracticaReto\\Persistencia\\Persistencia.csproj": {
-              "projectPath": "c:\\Users\\DDR5\\Desktop\\PracticaReto\\Persistencia\\Persistencia.csproj"
->>>>>>> bd6d7a660e4f20c3e34d006b662aa2f85306ee55
+            "C:\\Users\\DDR5\\Desktop\\PracticaReto\\Persistencia\\Persistencia.csproj": {
+              "projectPath": "C:\\Users\\DDR5\\Desktop\\PracticaReto\\Persistencia\\Persistencia.csproj"
             }
           }
         }

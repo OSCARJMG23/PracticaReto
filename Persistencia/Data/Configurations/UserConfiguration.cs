@@ -44,6 +44,7 @@ namespace Persistencia.Data.Configurations
                 .HasForeignKey(el=>el.UsuarioId),
                 j =>
                 {
+                    j.ToTable("userRoles");
                     j.HasKey(t => new {t.UsuarioId, t.RolId  });
                 });
 
